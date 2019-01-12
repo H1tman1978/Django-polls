@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- This website template was created by: Anthony Rolfe, 1/12/2019 -->
+<html>
+{% load static %}
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'polls/images/Glossy_3d_blue_questionmark.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>Our Latest Polls</p>
+    </header>
+    <main>
+        {% if latest_question_list %}
+            <ul>
+                {% for question in latest_question_list %}
+                    <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No polls are available.</p>
+        {% endif %}
+    </main>
+    <footer>
+        &copy; Copyright 2019. All Rights Reserved.<br>
+		Webmaster: <a href="mailto:arolfe@grantham.edu">arolfe@grantham.edu</a>
+    </footer>
+</body>
+</html>
