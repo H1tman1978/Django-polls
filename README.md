@@ -1,29 +1,22 @@
-=====
-Polls
-=====
+<h1>Django-polls</h1>
 
-Polls is a simple Django app to conduct Web-based polls. For each
-question, visitors can choose between a fixed number of answers.
+This is my first Django app that I created following the Django docs tutorial. As such, I really can't say no you can do whatever your heart desires with this code so it's on a GNU 3.0 license. I'm a noob with Django, so please feel free to let me know of any issues you discover by sending me an <a href="mailto:anthony@anthonyrolfe.rocks">email</a>. Enjoy!!
 
-Detailed documentation is in the "docs" directory.
+<h2>Installation Instructions</h2>
 
-Quick start
------------
+I'm assuming you're also a python developer and you know how to use python in the terminal and pip too. There's two ways to go about installing this web app:
 
-1. Add "polls" to your INSTALLED_APPS setting like this::
+<h3>First Method:</h3>
 
-    INSTALLED_APPS = [
-        ...
-        'polls',
-    ]
+Clone this repository and then just copy and paste the polls folder into your django framework and follow the instructions in the README.rst file
 
-2. Include the polls URLconf in your project urls.py like this::
+<h3>Second Method:</h3>
 
-    path('polls/', include('polls.urls')),
+<ol>
+    <li>Head on over to the Dist folder and right click on the tar.gz file and choose "Save As" from the menu.</li>
+    <li>Open a command promp or terminal in the directory you saved the file.</li>
+    <li>type this into your prompt: <strong>pip install --user django-polls/dist/django-polls-0.1.tar.gz</strong></li>
+    <li>You should now be able to import this package in your programming files</li>
+</ol>
 
-3. Run `python manage.py migrate` to create the polls models.
-
-4. Start the development server and visit http://127.0.0.1:8000/admin/
-   to create a poll (you'll need the Admin app enabled).
-
-5. Visit http://127.0.0.1:8000/polls/ to participate in the poll.
+<h4>I'm sure you all knew how to do this, but I thought instructions are a nice to have. I hope you enjoy this app and be sure to check back to see more future apps. Happy Programming!</h4>
