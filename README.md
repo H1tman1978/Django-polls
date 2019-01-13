@@ -1,6 +1,6 @@
 <h1>Django-polls</h1>
 
-This is my first Django app that I created following the Django docs tutorial. As such, I really can't say no you can do whatever your heart desires with this code so it's on a GNU 3.0 license. I'm a noob with Django, so please feel free to let me know of any issues you discover by sending me an <a href="mailto:anthony@anthonyrolfe.rocks">email</a>. Enjoy!!
+This is my first Django app that I created following the Django docs tutorial. As such, I really can't say no you can do whatever your heart desires with this code so it's on a GNU 3.0 license. Please note that this is just version 0.1 and is not considered production ready. I am sure there's many issues to correct and if you find one please feel free to let me know by opening an issue here on github or by sending me an <a href="mailto:anthony@anthonyrolfe.rocks">email</a>. Enjoy!!
 
 <h2>Installation Instructions</h2>
 
